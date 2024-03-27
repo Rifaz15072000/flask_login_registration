@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, session
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug import url_quote
 
 # Get the current directory of the script
 current_dir = os.path.dirname(os.path.abspath(__file__))
